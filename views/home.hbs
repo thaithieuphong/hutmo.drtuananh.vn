@@ -1,253 +1,3 @@
-{{!-- <main class="p-0">
-    {{#if messages_createCustomer_success}}
-        <div class="alert alert-success alert-dismissible fade show sticky-top" role="alert">
-            {{messages_createCustomer_success}}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    {{/if}}
-    {{#if messages_createCustomer_failure}}
-        <div class="alert alert-warning alert-dismissible fade show sticky-top" role="alert">
-            {{messages_createCustomer_failure}}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    {{/if}}
-    <section id="intro" class="text-light">
-        <img class="intro-img" src="/img/poster/poster650.png" alt="">
-    </section>
-    <section id="advantages">
-        <div id="advantages-carousel" class="carousel slide carousel-section2" data-bs-ride="carousel">
-            <div class="carousel-indicators advantages-carousel-indicators">
-                <button type="button" data-bs-target="#advantages-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#advantages-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#advantages-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#advantages-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner advantages-carousel-inner">
-                <div class="carousel-item active advantages-carousel-item">
-                    <img src="/img/muc2/slide1.png" class="d-block w-100 advantages-carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item advantages-carousel-item">
-                    <img src="/img/muc2/slide2.png" class="d-block w-100 advantages-carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item advantages-carousel-item">
-                    <img src="/img/muc2/slide3.png" class="d-block w-100 advantages-carousel-item-img" alt="...">
-                </div>
-                <div class="carousel-item advantages-carousel-item">
-                    <img src="/img/muc2/SLIDE-4.png" class="d-block w-100 advantages-carousel-item-img" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#advantages-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#advantages-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <div class="image-rotate-container">
-            <div class="image-rotate-item">
-                <img src="/img/muc2/slide1.png" class="w-100 rotate-item-img" alt="...">
-            </div>
-            <div class="image-rotate-item">
-                <img src="/img/muc2/SLIDE2-FIX.png" class="w-100 rotate-item-img" alt="...">
-            </div>
-            <div class="image-rotate-item">
-                <img src="/img/muc2/slide3.png" class="w-100 rotate-item-img" alt="...">
-            </div>
-        </div>
-    </section>
-    <section id="subject" class="text-light">
-        <div class="slider-wrap">
-            <div id="card-slider" class="slider">
-                <div class="slider-item">
-                    <div class="animation-card_image">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
-                    </div>
-                    <div class="animation-card_content">
-                        <h4 class="animation-card_content_title title-2">Charlize Theron 1</h4>
-                        <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-                        <p class="animation-card_content_city">New York, NY</p>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="animation-card_image">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
-                    </div>
-                    <div class="animation-card_content">
-                        <h4 class="animation-card_content_title title-2">Charlize Theron 2</h4>
-                        <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-                        <p class="animation-card_content_city">New York, NY</p>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="animation-card_image">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
-                    </div>
-                    <div class="animation-card_content">
-                        <h4 class="animation-card_content_title title-2">Charlize Theron 3</h4>
-                        <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-                        <p class="animation-card_content_city">New York, NY</p>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="animation-card_image">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
-                    </div>
-                    <div class="animation-card_content">
-                        <h4 class="animation-card_content_title title-2">Charlize Theron 4</h4>
-                        <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-                        <p class="animation-card_content_city">New York, NY</p>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="animation-card_image">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
-                    </div>
-                    <div class="animation-card_content">
-                        <h4 class="animation-card_content_title title-2">Charlize Theron 5</h4>
-                        <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-                        <p class="animation-card_content_city">New York, NY</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="services" class="text-light">
-        <div class="container container-service">
-            <h3 class="service-heading">DỊCH VỤ</h3>
-            <div id="carousel-service" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel-service" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carousel-service" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carousel-service" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carousel-service" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carousel-service" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carousel-service" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carousel-service" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/icon/image/belly.png" class="d-block img-mobile" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h5 class="carousel-caption-title">HÚT MỠ BỤNG</h5>
-                            <p class="carousel-sub-caption">Công nghệ Vaser 8D dễ dàng loại bỏ lượng mỡ thừa ở bụng hiệu quả.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/icon/image/waist.png" class="d-block img-mobile" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h5 class="carousel-caption-title">HÚT MỠ EO</h5>
-                            <p class="carousel-sub-caption">Giúp chị em lấy lại vòng eo thon gọn, hiệu quả vượt trội và phục hồi nhanh chóng.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/icon/image/back.png" class="d-block img-mobile" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h5 class="carousel-caption-title">HÚT MỠ XOÀI LƯNG</h5>
-                            <p class="carousel-sub-caption">Xóa bỏ mỡ thừa ở lưng an toàn, hiệu quả bằng Công nghệ hút mỡ Vaser 8D.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/icon/image/hand.png" class="d-block img-mobile" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h5 class="carousel-caption-title">HÚT MỠ TAY</h5>
-                            <p class="carousel-sub-caption">Tiểu phẫu loại bỏ mỡ thừa ở vùng cánh tay, giúp bạn lấy lại cánh tay săn chắc, thon gọn.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/icon/image/femoral.png" class="d-block img-mobile" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h5 class="carousel-caption-title">HÚT MỠ ĐÙI</h5>
-                            <p class="carousel-sub-caption">Phân tách - hóa lỏng mỡ thừa vùng đùi và hút mỡ ra ngoài bằng Công nghệ Vaser 8D.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/icon/image/calf.png" class="d-block img-mobile" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h5 class="carousel-caption-title">HÚT MỠ BẮP CHÂN</h5>
-                            <p class="carousel-sub-caption">Loại bỏ mỡ thừa giúp cải thiện chiều cao, tự tin khoe dáng.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/icon/image/armpit.png" class="d-block img-mobile" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h5 class="carousel-caption-title">HÚT MỠ NÁCH</h5>
-                            <p class="carousel-sub-caption">Là phương pháp làm phân tách và hút mỡ giúp chị em tự tin diện những bộ cánh gợi cảm.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-service" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-service" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
-    <section id="warning" class="text-light h-100vh bg-blue position-relative">
-        <h3 class="warning-heading m-0">LƯU Ý!!!</h3>
-        <div class="container-warning">
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-01.png" alt="">
-                <p class="warning-p m-0 bg-blue-glass">Vệ sinh vết thương sạch sẽ, thường xuyên.</p>
-            </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-02.png" alt="">
-                <p class="warning-p m-0 bg-blue-glass">24 giờ sau phẩu thuật, sinh hoạt, vận động, di chuyển nhẹ nhàng.</p>
-            </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-03.png" alt="">
-                <p class="warning-p m-0 bg-blue-glass">Mặc áo chỉnh hình, đeo băng ép, đeo gen nịt trong 1 - 2 tuần sau hút mỡ.</p>
-            </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-04.png" alt="">
-                <p class="warning-p m-0 bg-blue-glass">Chế độ ăn uống và tập luyện theo chế độ của bác sĩ.</p>
-            </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-05.png" alt="">
-                <p class="warning-p m-0 bg-blue-glass">Uống thuốc và tái khám theo chỉ định của bác sĩ.</p>
-            </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-06.png" alt="">
-                <p class="warning-p m-0 bg-red-glass">Trường hợp hút mỡ toàn thân, cần cân nhắc và khuyến cáo từ bác sĩ.</p>
-            </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-07.png" alt="">
-                <p class="warning-p m-0 bg-red-glass">Hút mỡ không phải là phương pháp điều trị béo phì.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-            </div>
-            <div class="col-md-6">
-            </div>
-        </div>
-    </section>
-    <section id="counselor" class="h-100vh">
-        <div class="container text-center counselor-container">
-            <div class="counselor-title mb-5">TƯ VẤN MIỄN PHÍ</div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control form-control-sm pl-5 rounded-pill" id="floatingFullName" placeholder="Họ và tên">
-                <label for="floatingFullName" class="pl-5">Họ và tên</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control form-control-sm rounded-pill" id="floatingPhone" placeholder="Số điện thoại">
-                <label for="floatingPhone">Số điện thoại</label>
-            </div>
-            <div class="form-floating">
-                <textarea class="form-control rounded-pill bg-transparent text-light pl-5" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
-                <label for="floatingTextarea2" class="text-light pl-5">Comments</label>
-            </div>
-        </div>
-    </section>
-</div>
-<script src="/js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> --}}
-
 <div class="w3-content" style="max-width: 100%;margin-bottom:80px">
     <section id="intro">
         <div class="w3-container">
@@ -284,8 +34,8 @@
 
             <!-- Slideshow next/previous buttons -->
             <div class="w3-container w3-display-bottommiddle w3-transparent w3-padding w3-xlarge w-100">
-                <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
-                <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+                <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal text-light fs-1"></i></div>
+                <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal text-light fs-1"></i></div>
             
                 <div class="w3-center">
                     <span class="w3-tag demodots w3-border w3-indigo w3-hover-black" onclick="currentDiv(1)"></span>
@@ -297,65 +47,67 @@
     </section>
     
     <section id="subject">
-        <!-- Grid -->
-        <div class="w3-row w3-container">
-            <div class="w3-center padding78-64">
-                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">ĐỐI TƯỢNG PHÙ HỢP</span>
-            </div>
-
-            <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
-                <img src="/img/muc3/3-01.png" alt="" class="d-block wh-250 m-auto">
-                <div class="overlay">
-                    <p class="text-light p-3">Nam và nữ trên 18 tuổi có nhu cầu hút mỡ.</p>
+        <div class="container-fluid">
+            <!-- Grid -->
+            <div class="w3-row w3-container">
+                <div class="w3-center padding78-64">
+                    <h3 class="w3-border-dark-grey w3-padding-16 subject-title text-light"><b>ĐỐI TƯỢNG PHÙ HỢP</b></h3>
                 </div>
-            </div>
 
-            <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
-                <img src="/img/muc3/3-02.png" alt="" class="d-block wh-250 m-auto">
-                <div class="overlay">
-                    <p class="text-light p-3">Tự ti vì ngoại hình không hấp dẫn.</p>
+                <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
+                    <img src="/img/square/square1.png" alt="" class="d-block wh-250 m-auto">
+                    <div class="overlay">
+                        <p class="text-light p-3">Nam và nữ trên 18 tuổi có nhu cầu hút mỡ.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
-                <img src="/img/muc3/3-03.png" alt="" class="d-block wh-250 m-auto">
-                <div class="overlay">
-                    <p class="text-light p-3">Khó cải thiện vóc dáng bằng cách ăn kiêng và tập thể thao.</p>
+                <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
+                    <img src="/img/square/square2.png" alt="" class="d-block wh-250 m-auto">
+                    <div class="overlay">
+                        <p class="text-light p-3">Tự ti vì ngoại hình không hấp dẫn.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
-                <img src="/img/muc3/3-07.png" alt="" class="d-block wh-250 m-auto">
-                <div class="overlay">
-                    <p class="text-light p-3">Làm việc trong môi trường ít vận động, ngồi nhiều dễ tích tụ mỡ thừa như nhân viên văn phòng…</p>
+                <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
+                    <img src="/img/square/square3.png" alt="" class="d-block wh-250 m-auto">
+                    <div class="overlay">
+                        <p class="text-light p-3">Khó cải thiện vóc dáng bằng cách ăn kiêng và tập thể thao.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
-                <img src="/img/muc3/3-04.png" alt="" class="d-block wh-250 m-auto">
-                <div class="overlay">
-                    <p class="text-light p-3">Không gặp các vấn đề sức khỏe như bệnh tiểu đường, huyết áp, tim mạch, máu khó đông…</p>
+                <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
+                    <img src="/img/square/square7.png" alt="" class="d-block wh-250 m-auto">
+                    <div class="overlay">
+                        <p class="text-light p-3">Làm việc trong môi trường ít vận động, ngồi nhiều dễ tích tụ mỡ thừa như nhân viên văn phòng…</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
-                <img src="/img/muc3/3-05.png" alt="" class="d-block wh-250 m-auto">
-                <div class="overlay">
-                    <p class="text-light p-3">Không sử dụng các chất kích thích, rượu bia, thuốc lá…</p>
-                </div>
-            </div>
 
-            <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
-                <img src="/img/muc3/3-06.png" alt="" class="d-block wh-250 m-auto">
-                <div class="overlay">
-                    <p class="text-light p-3">Không sử dụng các loại thuốc làm tăng nguy cơ chảy máu.</p>
+                <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
+                    <img src="/img/square/square4.png" alt="" class="d-block wh-250 m-auto">
+                    <div class="overlay">
+                        <p class="text-light p-3">Không gặp các vấn đề sức khỏe như bệnh tiểu đường, huyết áp, tim mạch, máu khó đông…</p>
+                    </div>
                 </div>
-            </div>
+                
+                <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
+                    <img src="/img/square/square5.png" alt="" class="d-block wh-250 m-auto">
+                    <div class="overlay">
+                        <p class="text-light p-3">Không sử dụng các chất kích thích, rượu bia, thuốc lá…</p>
+                    </div>
+                </div>
 
-            <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
-                <img src="/img/muc3/3-08.png" alt="" class="d-block wh-250 m-auto">
-                <div class="overlay">
-                    <p class="text-light p-3">Phụ nữ sau sinh trên 6 tháng và không trong giai đoạn cho con bú.</p>
+                <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
+                    <img src="/img/square/square6.png" alt="" class="d-block wh-250 m-auto">
+                    <div class="overlay">
+                        <p class="text-light p-3">Không sử dụng các loại thuốc làm tăng nguy cơ chảy máu.</p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
+                    <img src="/img/square/square8.png" alt="" class="d-block wh-250 m-auto">
+                    <div class="overlay">
+                        <p class="text-light p-3">Phụ nữ sau sinh trên 6 tháng và không trong giai đoạn cho con bú.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -363,59 +115,93 @@
 
     <section id="services">
         <div class="w3-panel text-light text-center pt-5rem">
-            <h3><b>CÁC LOẠI DỊCH VỤ HÚT MỠ</b></h3>
-            <p>Tại Dr.Tuấn Anh</p>
+            <h3 class="services-title"><b>CÁC LOẠI DỊCH VỤ HÚT MỠ</b></h3>
+            <p class="services-subtitle">Tại Dr.Tuấn Anh</p>
         </div>
         <!-- Slideshow -->
-        <div class="w3-container">
+        <div class="w3-container pt-5rem">
             <div class="w3-display-container section4 text-center">
                 <img src="/icon/image/belly.png" class="wh-250 m-auto">
                 <div class="w3-display-bottom w3-container w3-padding-32">
-                    <span class="w3-white w3-padding-large w3-animate-bottom">Hút mỡ bụng</span>
+                    <ul class="w3-ul w3-padding-large w3-animate-bottom">
+                        <li class="text-light">
+                            <h3>Hút mỡ bụng</h3>
+                            <p>Bụng là bộ phận dễ tích tụ mỡ. Công nghệ Vaser 8D giúp bạn dễ dàng loại bỏ đi lượng mỡ thừa nhanh chóng.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="w3-display-container section4 text-center">
                 <img src="/icon/image/waist.png" class="wh-250 m-auto">
                 <div class="w3-display-bottom w3-container w3-padding-32">
-                    <span class="w3-white w3-padding-large w3-animate-bottom">Hút mỡ eo</span>
+                    <ul class="w3-ul w3-padding-large w3-animate-bottom">
+                        <li class="text-light">
+                            <h3>Hút mỡ eo</h3>
+                            <p>Là phương pháp giúp chị em lấy lại vòng eo thon gọn, hiệu quả vượt trội và phục hồi nhanh chóng.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="w3-display-container section4 text-center">
                 <img src="/icon/image/back.png" class="wh-250 m-auto">
                 <div class="w3-display-bottom w3-container w3-padding-32">
-                    <span class="w3-white w3-padding-large w3-animate-bottom">Hút mỡ lưng</span>
+                    <ul class="w3-ul w3-padding-large w3-animate-bottom">
+                        <li class="text-light">
+                            <h3>Hút mỡ lưng</h3>
+                            <p>Là vùng khó giảm mỡ nhất bằng phương pháp tự nhiên. Cần phương pháp hút mỡ Vaser 8D xóa bỏ mỡ thừa nhanh chóng và hiệu quả.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="w3-display-container section4 text-center">
                 <img src="/icon/image/hand.png" class="wh-250 m-auto">
                 <div class="w3-display-bottom w3-container w3-padding-32">
-                    <span class="w3-white w3-padding-large w3-animate-bottom">Hút mỡ tay</span>
+                    <ul class="w3-ul w3-padding-large w3-animate-bottom">
+                        <li class="text-light">
+                            <h3>Hút mỡ tay</h3>
+                            <p>Là một cuộc phẫu thuật loại bỏ mỡ thừa ở vùng cánh tay, giúp bạn lấy lại cánh tay săn chắc, thon gọn.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="w3-display-container section4 text-center">
                 <img src="/icon/image/calf.png" class="wh-250 m-auto">
                 <div class="w3-display-bottom w3-container w3-padding-32">
-                    <span class="w3-white w3-padding-large w3-animate-bottom">Hút mỡ bắp chân</span>
+                    <ul class="w3-ul w3-padding-large w3-animate-bottom">
+                        <li class="text-light">
+                            <h3>Hút mỡ bắp chân</h3>
+                            <p>Là phương pháp thẩm mỹ giúp bạn loại bỏ được phần mỡ thừa. Giúp cải thiện chiều cao và tự tin khoe dáng.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="w3-display-container section4 text-center">
                 <img src="/icon/image/femoral.png" class="wh-250 m-auto">
                 <div class="w3-display-bottom w3-container w3-padding-32">
-                    <span class="w3-white w3-padding-large w3-animate-bottom">Hút mỡ đùi</span>
+                    <ul class="w3-ul w3-padding-large w3-animate-bottom">
+                        <li class="text-light">
+                            <h3>Hút mỡ đùi</h3>
+                            <p>Là phương pháp loại bỏ mỡ thừa vùng đùi. Mỡ được phân tách và hóa lỏng sau đó hút ra ngoài.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="w3-display-container section4 text-center">
                 <img src="/icon/image/armpit.png" class="wh-250 m-auto">
                 <div class="w3-display-bottom w3-container w3-padding-32">
-                    <span class="w3-white w3-padding-large w3-animate-bottom">Hút mỡ nách</span>
+                    <ul class="w3-ul w3-padding-large w3-animate-bottom">
+                        <li class="text-light">
+                            <h3>Hút mỡ nách</h3>
+                            <p>là phương pháp làm phân tách mỡ thành các phân tử nhỏ rồi sau đó hút ra ngoài nhằm loại bỏ mỡ vùng nách một cách hiệu quả nhất.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
             <!-- Slideshow next/previous buttons -->
             <div class="w3-container w3-padding w3-xlarge w-100">
-                <div class="w3-left" onclick="plusSection4(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
-                <div class="w3-right" onclick="plusSection4(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
-            
+                <div class="w3-left" onclick="plusSection4(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal text-light fs-1"></i></div>
+                <div class="w3-right" onclick="plusSection4(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal text-light fs-1"></i></div>
                 <div class="w3-center">
                     <span class="w3-tag section4dots w3-border w3-transparent w3-hover-white" onclick="currentSection4(1)"></span>
                     <span class="w3-tag section4dots w3-border w3-transparent w3-hover-white" onclick="currentSection4(2)"></span>
@@ -429,243 +215,106 @@
         </div>
     </section>
 
-    <section id="warning" class="text-light h-100vh bg-blue position-relative">
-        <h3 class="warning-heading m-0">LƯU Ý!!!</h3>
-        <div class="container-warning">
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-01.png" alt="">
-                <p class="warning-p m-0 bg-blue-glass">Vệ sinh vết thương sạch sẽ, thường xuyên.</p>
+    <section id="warning" class="text-light bg-blue position-relative">
+        <h3 class="warning-heading"><b>LƯU Ý!!!</b></h3>
+        <div class="container pb-3">
+            <div class="w-col">
+                <div class="container-warning">
+                    <img src="/img/section5/5-01.png" alt="Avatar">
+                    <p>Vệ sinh vết thương sạch sẽ, thường xuyên.</p>
+                </div>
             </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-02.png" alt="">
-                <p class="warning-p m-0 bg-blue-glass">24 giờ sau phẩu thuật, sinh hoạt, vận động, di chuyển nhẹ nhàng.</p>
+            <div class="w-col">
+                <div class="container-warning">
+                    <img src="/img/section5/5-02.png" alt="Avatar">
+                    <p>Sau 24h hút mỡ, sinh hoạt hằng ngày, di chuyển vận động nhẹ nhàng.</p>
+                </div>
             </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-03.png" alt="">
-                <p class="warning-p m-0 bg-blue-glass">Mặc áo chỉnh hình, đeo băng ép, đeo gen nịt trong 1 - 2 tuần sau hút mỡ.</p>
+            <div class="w-col">
+                <div class="container-warning">
+                    <img src="/img/section5/5-03.png" alt="Avatar">
+                    <p>Mặc áo chỉnh hình, đeo băng ép, đeo gen nịt trong 1-2 tuần sau hút mỡ</p>
+                </div>
             </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-04.png" alt="">
-                <p class="warning-p m-0 bg-blue-glass">Chế độ ăn uống và tập luyện theo chế độ của bác sĩ.</p>
+            <div class="w-col">
+                <div class="container-warning">
+                    <img src="/img/section5/5-04.png" alt="Avatar">
+                    <p>Chế độ ăn uống và tập luyện theo chỉ định của bác sĩ</p>
+                </div>
             </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-05.png" alt="">
-                <p class="warning-p m-0 bg-blue-glass">Uống thuốc và tái khám theo chỉ định của bác sĩ.</p>
+            <div class="w-col">
+                <div class="container-warning">
+                    <img src="/img/section5/5-05.png" alt="Avatar">
+                    <p>Uống thuốc và tái khám theo chỉ định bác sĩ</p>
+                </div>
             </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-06.png" alt="">
-                <p class="warning-p m-0 bg-red-glass">Trường hợp hút mỡ toàn thân, cần cân nhắc và khuyến cáo từ bác sĩ.</p>
+            <div class="w-col">
+                <div class="container-warning">
+                    <img src="/img/section5/5-06.png" alt="Avatar">
+                    <p>Trường hợp hút mỡ toàn thân, cần cân nhắc và khuyến cáo từ bác sĩ.</p>
+                </div>
             </div>
-            <div class="warning-item mt-2">
-                <img class="warning-img" src="/img/section5/5-07.png" alt="">
-                <p class="warning-p m-0 bg-red-glass">Hút mỡ không phải là phương pháp điều trị béo phì.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-            </div>
-            <div class="col-md-6">
+            <div class="w-col">
+                <div class="container-warning">
+                    <img src="/img/section5/5-07.png" alt="Avatar">
+                    <p>Hút mỡ không phải là phương pháp điều trị béo phì.</p>
+                </div>
             </div>
         </div>
     </section>
-        <!-- Grid -->
-        <div class="w3-row-padding" id="plans">
-            <div class="w3-center w3-padding-64">
-                <h3>Pricing Plans</h3>
-                <p>Choose a pricing plan that fits your needs.</p>
-            </div>
 
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                    <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-                    <li class="w3-padding-16"><b>10GB</b> Storage</li>
-                    <li class="w3-padding-16"><b>10</b> Emails</li>
-                    <li class="w3-padding-16"><b>10</b> Domains</li>
-                    <li class="w3-padding-16"><b>Endless</b> Support</li>
-                    <li class="w3-padding-16">
-                    <h2 class="w3-wide">$ 10</h2>
-                    <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-                    <li class="w3-padding-16"><b>25GB</b> Storage</li>
-                    <li class="w3-padding-16"><b>25</b> Emails</li>
-                    <li class="w3-padding-16"><b>25</b> Domains</li>
-                    <li class="w3-padding-16"><b>Endless</b> Support</li>
-                    <li class="w3-padding-16">
-                    <h2 class="w3-wide">$ 25</h2>
-                    <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                    <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
-                    <li class="w3-padding-16"><b>50GB</b> Storage</li>
-                    <li class="w3-padding-16"><b>50</b> Emails</li>
-                    <li class="w3-padding-16"><b>50</b> Domains</li>
-                    <li class="w3-padding-16"><b>Endless</b> Support</li>
-                    <li class="w3-padding-16">
-                    <h2 class="w3-wide">$ 50</h2>
-                    <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Grid -->
-        <div class="w3-row-padding" id="about">
-            <div class="w3-center w3-padding-64">
-                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4">
-                    <img src="/w3images/team1.jpg" alt="John" style="width:100%">
-                    <div class="w3-container">
-                    <h3>Jane Doe</h3>
-                    <p class="w3-opacity">CEO & Founder</p>
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-                    </div>
+    <section id="counselor">
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 bg-glass w3-center position-bottom">
+            <div class="container text-center counselor-container mb-3">
+                <h3 class="counselor-title mb-5"><b>TƯ VẤN MIỄN PHÍ</b></h3>
+                <div class="container">
+                    <form id="counselor-form" action="/" method="POST">
+                        <div class="form-group mb-3">
+                            <label for="floatingFullName" class="pl-5 text-light mb-3">Họ và tên</label>
+                            <input type="text" class="form-control pl-5 rounded-pill bg-transparent text-light" rules="required" id="floatingFullName"
+                            name="nickName">
+                            {{#if messages_account_failure}}
+                            <span class="form-message text-danger mt-3">{{messages_account_failure}}</span>
+                            {{else}}
+                            <span class="form-message mt-3"></span>
+                            {{/if}}
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="floatingPhone" class="pl-5 text-light mb-3">Số điện thoại</label>
+                            <input type="text" class="form-control rounded-pill bg-transparent text-light" rules="required|max:10|phone" id="floatingPhone"
+                            name="phone">
+                            {{#if messages_password_failure}}
+                            <span class="form-message text-danger mt-3">{{messages_password_failure}}</span>
+                            {{else}}
+                            <span class="form-message mt-3"></span>
+                            {{/if}}
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="floatingTextarea2" class="text-light pl-5 mb-3">Thông tin cần tư vấn</label>
+                            <textarea class="form-control rounded-pill bg-transparent text-light pl-5" name="require" placeholder="Thông tin cần tư vấn" id="floatingTextarea2"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary rounded-pill border text-light">Đặt lịch hẹn</button>
+                    </form>
                 </div>
             </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4">
-                    <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
-                    <div class="w3-container">
-                    <h3>Mike Ross</h3>
-                    <p class="w3-opacity">Art Director</p>
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-                    </div>
-                </div>
+            {{!-- <h4>Footer</h4> --}}
+            <a href="#" class="w3-button bg-glass text-light border rounded-pill w3-margin mt-5"><i class="fa fa-arrow-up w3-margin-right"></i>Lên đầu trang</a>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity text-light"></i>
+                <i class="fa fa-instagram w3-hover-opacity text-light"></i>
+                <i class="fa fa-snapchat w3-hover-opacity text-light"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity text-light"></i>
+                <i class="fa fa-twitter w3-hover-opacity text-light"></i>
+                <i class="fa fa-linkedin w3-hover-opacity text-light"></i>
             </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4">
-                    <img src="/w3images/team3.jpg" alt="Jane" style="width:100%">
-                    <div class="w3-container">
-                    <h3>John Doe</h3>
-                    <p class="w3-opacity">Designer</p>
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-  <!-- Contact -->
-  <div class="w3-center w3-padding-64" id="contact">
-    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
-  </div>
-
-  <form class="w3-container" action="/action_page.php" target="_blank">
-    <div class="w3-section">
-      <label>Name</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
-    </div>
-    <div class="w3-section">
-      <label>Email</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
-    </div>
-    <div class="w3-section">
-      <label>Subject</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
-    </div>
-    <div class="w3-section">
-      <label>Message</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
-    </div>
-    <button type="submit" class="w3-button w3-block w3-black">Send</button>
-  </form>
+            <p class=" text-light">Copyright @<a href="https://www.drtuananh.vn" title="Hachitech" target="_blank" class="w3-hover-text-green">Hachitech</a></p>
+        </footer>
+    </section>
 
 </div>
 
-<!-- Footer -->
-
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-  <h4>Footer</h4>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
+<script src="/js/main.js"></script>
 <script>
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-
-showSection4(slideIndex);
-
-function plusSection4(n) {
-  showSection4(slideIndex += n);
-}
-
-function currentSection4(n) {
-  showSection4(slideIndex = n);
-}
-
-function showSection4(n) {
-  var i;
-  var x = document.getElementsByClassName("section4");
-  var dots = document.getElementsByClassName("section4dots");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
+    validate('#counselor-form');
 </script>

@@ -14,21 +14,22 @@ class HomeController {
 	}
 
 	postCustomer(req, res, next) {
-		if (req.body.fullName !== '' && req.body.phone !== '' && req.body.require !== '') {
+		if (req.body.nickName !== '' && req.body.phone !== '' && req.body.require !== '') {
 			const customer = new Customer({
-				lastName: req.body.fullName,
+				nickName: req.body.nickName,
 				phone: req.body.phone,
 				description: req.body.require,
 				statusCus: {
 					statusVi: 'Tạo mới',
 					statusEng: 'New'
 				},
+				userID: "631882156c0f147484c02491" 
 			});
 			customer.save();
 			req.flash('messages_createCustomer_success', 'Đặt lịch thành công');
 		}
 
-		if (req.body.fullName === '' || req.body.phone === '' || req.body.require === '') {
+		if (req.body.nickName === '' || req.body.phone === '' || req.body.require === '') {
 			req.flash('messages_createCustomer_failure', 'Đặt lịch không thành công');
 		}
 		res.redirect("back");
