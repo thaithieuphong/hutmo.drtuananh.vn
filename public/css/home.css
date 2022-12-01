@@ -217,6 +217,16 @@ html, body {
     display: block;
 }
 
+.popup-img {
+    background-size: cover;
+}
+
+.close-popup {
+    float: right;
+    padding-top: 8px;
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
