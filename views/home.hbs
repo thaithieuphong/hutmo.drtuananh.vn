@@ -33,7 +33,7 @@
             </div>
 
             <!-- Slideshow next/previous buttons -->
-            <div class="w3-container w3-display-bottommiddle w3-transparent w3-padding w3-xlarge w-100">
+            <div class="w3-container w3-display-middle w3-transparent w3-padding w3-xlarge w-100">
                 <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal text-light fs-1"></i></div>
                 <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal text-light fs-1"></i></div>
             
@@ -51,7 +51,7 @@
             <!-- Grid -->
             <div class="w3-row w3-container">
                 <div class="w3-center padding78-64">
-                    <h3 class="w3-border-dark-grey w3-padding-16 subject-title text-light"><b>ĐỐI TƯỢNG PHÙ HỢP</b></h3>
+                    <h3 class="w3-border-dark-grey subject-title text-light"><b>ĐỐI TƯỢNG PHÙ HỢP</b></h3>
                 </div>
 
                 <div class="w3-col l3 m6 w3-transparent w3-container w3-padding-16 subject-container">
@@ -119,7 +119,7 @@
             <p class="services-subtitle">Tại Dr.Tuấn Anh</p>
         </div>
         <!-- Slideshow -->
-        <div class="w3-container pt-5rem">
+        <div class="w3-container position-relative">
             <div class="w3-display-container section4 text-center">
                 <img src="/icon/image/belly.png" class="wh-250 m-auto">
                 <div class="w3-display-bottom w3-container w3-padding-32">
@@ -199,10 +199,10 @@
             </div>
 
             <!-- Slideshow next/previous buttons -->
-            <div class="w3-container w3-padding w3-xlarge w-100">
+            <div class="w3-container w3-display-middle w3-transparent w3-padding w3-xlarge w-100">
                 <div class="w3-left" onclick="plusSection4(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal text-light fs-1"></i></div>
                 <div class="w3-right" onclick="plusSection4(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal text-light fs-1"></i></div>
-                <div class="w3-center">
+                {{!-- <div class="w3-center">
                     <span class="w3-tag section4dots w3-border w3-transparent w3-hover-white" onclick="currentSection4(1)"></span>
                     <span class="w3-tag section4dots w3-border w3-transparent w3-hover-white" onclick="currentSection4(2)"></span>
                     <span class="w3-tag section4dots w3-border w3-transparent w3-hover-white" onclick="currentSection4(3)"></span>
@@ -210,7 +210,7 @@
                     <span class="w3-tag section4dots w3-border w3-transparent w3-hover-white" onclick="currentSection4(5)"></span>
                     <span class="w3-tag section4dots w3-border w3-transparent w3-hover-white" onclick="currentSection4(6)"></span>
                     <span class="w3-tag section4dots w3-border w3-transparent w3-hover-white" onclick="currentSection4(7)"></span>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -219,43 +219,43 @@
         <h3 class="warning-heading"><b>LƯU Ý!!!</b></h3>
         <div class="container pb-3">
             <div class="w-col">
-                <div class="container-warning">
+                <div class="container-warning rounded-pill bg-transparent">
                     <img src="/img/section5/5-01.png" alt="Avatar">
                     <p>Vệ sinh vết thương sạch sẽ, thường xuyên.</p>
                 </div>
             </div>
             <div class="w-col">
-                <div class="container-warning">
+                <div class="container-warning rounded-pill bg-transparent">
                     <img src="/img/section5/5-02.png" alt="Avatar">
                     <p>Sau 24h hút mỡ, sinh hoạt hằng ngày, di chuyển vận động nhẹ nhàng.</p>
                 </div>
             </div>
             <div class="w-col">
-                <div class="container-warning">
+                <div class="container-warning rounded-pill bg-transparent">
                     <img src="/img/section5/5-03.png" alt="Avatar">
                     <p>Mặc áo chỉnh hình, đeo băng ép, đeo gen nịt trong 1-2 tuần sau hút mỡ</p>
                 </div>
             </div>
             <div class="w-col">
-                <div class="container-warning">
+                <div class="container-warning rounded-pill bg-transparent">
                     <img src="/img/section5/5-04.png" alt="Avatar">
                     <p>Chế độ ăn uống và tập luyện theo chỉ định của bác sĩ</p>
                 </div>
             </div>
             <div class="w-col">
-                <div class="container-warning">
+                <div class="container-warning rounded-pill bg-transparent">
                     <img src="/img/section5/5-05.png" alt="Avatar">
                     <p>Uống thuốc và tái khám theo chỉ định bác sĩ</p>
                 </div>
             </div>
             <div class="w-col">
-                <div class="container-warning">
+                <div class="container-warning rounded-pill bg-red-glass">
                     <img src="/img/section5/5-06.png" alt="Avatar">
                     <p>Trường hợp hút mỡ toàn thân, cần cân nhắc và khuyến cáo từ bác sĩ.</p>
                 </div>
             </div>
             <div class="w-col">
-                <div class="container-warning">
+                <div class="container-warning rounded-pill bg-red-glass">
                     <img src="/img/section5/5-07.png" alt="Avatar">
                     <p>Hút mỡ không phải là phương pháp điều trị béo phì.</p>
                 </div>
@@ -268,7 +268,7 @@
         <footer class="w3-container w3-padding-32 bg-glass w3-center position-bottom">
             <div class="container text-center counselor-container mb-3">
                 <h3 class="counselor-title mb-5"><b>TƯ VẤN MIỄN PHÍ</b></h3>
-                <div class="container">
+                <div class="container-form m-auto">
                     <form id="counselor-form" action="/" method="POST">
                         <div class="form-group mb-3">
                             <label for="floatingFullName" class="pl-5 text-light mb-3">Họ và tên</label>
@@ -303,10 +303,7 @@
             <div class="w3-xlarge w3-section">
                 <i class="fa fa-facebook-official w3-hover-opacity text-light"></i>
                 <i class="fa fa-instagram w3-hover-opacity text-light"></i>
-                <i class="fa fa-snapchat w3-hover-opacity text-light"></i>
                 <i class="fa fa-pinterest-p w3-hover-opacity text-light"></i>
-                <i class="fa fa-twitter w3-hover-opacity text-light"></i>
-                <i class="fa fa-linkedin w3-hover-opacity text-light"></i>
             </div>
             <p class=" text-light">Copyright @<a href="https://www.drtuananh.vn" title="Hachitech" target="_blank" class="w3-hover-text-green">Hachitech</a></p>
         </footer>
