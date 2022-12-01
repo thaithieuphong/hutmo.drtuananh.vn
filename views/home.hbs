@@ -1,3 +1,15 @@
+{{#if messages_createCustomer_success}}
+	<div class="alert alert-success alert-dismissible fade show m-3" role="alert">
+		{{messages_createCustomer_success}}
+		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>
+{{/if}}
+{{#if messages_createCustomer_failure}}
+    <div class="alert alert-danger alert-dismissible fade show m-3" role="alert">
+		{{messages_createCustomer_failure}}
+		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>
+{{/if}}
 <div class="w3-content" style="max-width: 100%;margin-bottom:80px">
     <section id="intro">
         <div class="w3-container">

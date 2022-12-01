@@ -21,7 +21,7 @@ if (`${process.env.NODE_ENV}` !== "production") {
 
 // Cung cấp middleware trên Express để kích hoạt CORS
 var corsOptions = {
-	origin: "http://crm.drtuananh.vn",
+	origin: "https://hutmo.drtuananh.vn",
 };
 
 // Method Override
@@ -34,7 +34,7 @@ app.use(cors(corsOptions));
 app.use(
 	cookieSession({
 		name: "Hachitech-session",
-		secret: "PHONGTT119",
+		secret: `${process.env.SECURITY_KEY}`,
 		httpOnly: true,
 		secure: false, // change to 'true' when switching to production enviroment
 		sameSite: 'strict',
@@ -43,7 +43,7 @@ app.use(
 );
 
 app.use(session({
-	secret: "khoabaomatdanhchoflash",
+	secret: `${process.env.FLASH_SESSION_KEY}`,
 	saveUninitialized: true,
 	resave: true
 }));
