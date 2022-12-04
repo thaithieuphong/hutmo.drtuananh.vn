@@ -7,12 +7,15 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 html, body {
     height: 100%;
+    overflow:auto;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 #logo {
@@ -47,16 +50,6 @@ html, body {
     height: inherit;
 }
 
-.subject-container {
-    position: relative;
-    /* width: 50%; */
-}
-
-.subject-title {
-    font-weight: 400;
-    font-family: 'Nunito', sans-serif;
-}
-
 .overlay {
     position: absolute;
     top: 0;
@@ -74,17 +67,6 @@ html, body {
     font-size: 20px;
 }
 
-.subject-container:hover .overlay {
-    opacity: 1;
-}
-
-#subject {
-    background-image: url("/img/square/BACKGROUND.png");
-    /* height: 100vh; */
-}
-
-
-
 .bg-red-glass {
     background-color: rgba(255, 0, 0, 0.4);
 }
@@ -92,6 +74,10 @@ html, body {
 .bg-blue-glass {
     background: rgba(4, 20, 52, 0.3);
     /* background-image: linear-gradient(135deg, #b57a02, #c3912f, #fdf17e, #fdf17e, #c3912f); */
+}
+
+.bg-blue {
+    background: rgb(4, 20, 52);
 }
 
 .bg-brown {
@@ -104,14 +90,6 @@ html, body {
 
 .img-cover {
     object-fit: cover !important;
-}
-
-
-#services {
-    background-image: url("/img/b1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .service-item-title {
