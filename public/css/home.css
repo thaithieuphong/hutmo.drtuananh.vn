@@ -42,6 +42,10 @@ body {
     padding: 0.01em 0 !important;
 }
 
+.carousel-caption {
+    bottom: 1.05rem !important;
+}
+
 .padding78-64 {
     padding-top: 56px !important;
     /* padding-bottom: 16px !important; */
