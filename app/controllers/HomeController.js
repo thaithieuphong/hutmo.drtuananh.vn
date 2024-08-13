@@ -1,11 +1,4 @@
 const Customer = require("../models/Customer");
-const path = require('path');
-const rootPath = path.sep;
-
-const {
-	multipleMongooseToObject,
-	mongooseToObject,
-} = require("../../util/mongoose");
 
 class HomeController {
 
@@ -14,25 +7,29 @@ class HomeController {
 	}
 
 	postCustomer(req, res, next) {
-		if (req.body.nickName !== '' && req.body.phone !== '' && req.body.require !== '') {
+		const nickName = req.body.nickName
+		const phone = req.body.phone
+		const require = req.body.require
+		if (nickName !== '' && phone !== '' && require !== '') {
 			const customer = new Customer({
-				nickName: req.body.nickName,
-				phone: req.body.phone,
-				description: req.body.require,
+				nickName,
+				phone,
+				description: require,
 				statusCus: {
 					statusVi: 'Tạo mới',
 					statusEng: 'New'
 				},
-				userID: "631882156c0f147484c02491" 
+				resource: 'Hút mỡ Dr.Tuấn Anh'
 			});
-			customer.save();
-			req.flash('messages_createCustomer_success', 'Đặt lịch thành công');
+			customer.save()
+				.then(() => {
+					res.redirect('back')
+				});
 		}
 
 		if (req.body.nickName === '' || req.body.phone === '' || req.body.require === '') {
-			req.flash('messages_createCustomer_failure', 'Đặt lịch không thành công');
+			res.redirect("back");
 		}
-		res.redirect("back");
 	}
 
 }
